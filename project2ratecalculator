@@ -1,0 +1,17 @@
+package project2ratecalculator;
+import java.util.Scanner;
+
+public class Rate_Calculator {
+
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter the candidate rate");
+
+        String CanRate = myObj.nextLine();  // Read user input
+        System.out.println("candidate rate is: " + CanRate);  // Output user input
+
+        double Canrate = Double.parseDouble(CanRate); // Parse string to double
+        int CanCost = (int) (Canrate * 1.14); // Multiply Canrate by 1.14 and cast to int
+        System.out.println("candidate cost is: " + CanCost);
+    }
+}
